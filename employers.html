@@ -1,0 +1,213 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Employers</title>
+
+<link rel="stylesheet" href="employers.css">
+
+<script>
+    function handleChange(checkbox) {
+    if(checkbox.checked == true){
+        document.getElementById("submit").setAttribute("disabled", "disabled");
+        alert("Unfortunately, you do not currently qualify to post on our website, but email us and we’d love to share resources to help you along your journey.");
+    }else{
+        document.getElementById("submit").removeAttribute("disabled");
+   }
+}
+
+</script>
+
+</head>
+<body>
+
+  
+  <ul>
+    <li><a href="./jobseekers.html"><img src="image2.png" class='center' width=5px/>POST A RESUME</a></li>
+    <li><a href="./employers.html"><img src="image3.jpeg" class='center' width=30px/>POST A JOB</a></li>
+    <li><a class="navbar" href="jobboard.html" ><img src="image4.png" class='center' width=20px>JOB BOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>EMPLOYER <br>DASHBOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>JOB SEEKER <br>DASHBOARD</a></li>
+  </ul>
+
+
+  <div>
+  <h1 id='title' style='position: relative;'>Employers</h1>
+  <p style="width:auto; color: white; margin-top: 0px; position: absolute; top: 300px; left: 370px;">Reach candidates in the black LGBTQ+ community by posting your job openings on our website.</p>
+    <div>
+  <button onclick="document.getElementById('id01').style.display='block'" style="border-radius: 12px; width:auto; background-color: white; color: black; margin-top: 0px; position: absolute; top: 350px; left: 580px;">CREATE AN EMPLOYER ACCOUNT</button></button>
+    </div>
+  </div>
+
+  <br>
+  <h2 style='text-align:center; margin-top: 35px'>Learn more about the BRS community</h2>
+
+  <br>
+  <br>
+
+  <div class="flex-container">
+    <div><img src='./image7.png' style=' width: 100%; height: auto; margin: 0px'></div>
+    <div style='background-color: #DEDBE4; width: 140%; '><img src='./image6.png' width='250' height='auto' style='margin-left: 300px; margin-top: 25px'><p style='margin: 50px; font-size: 20px;'>Black Remote She facilitates job creation for underemployed and underrepresented
+        candidates. Our platform partners with employers maintaining diverse, inclusive,
+        equitable, and discriminatory-free hiring processes and work environments.</p></div>
+
+  </div>
+
+  <br>
+  <br>
+
+  <h2 style='text-align:center;'>Find out if you qualify</h2>
+
+  <div class="flex-container2">
+    <div>
+  <img src='./image8.png' width=250 height= auto style='margin-left: 100px; margin-top: 50px'>
+  
+  <p style='margin-left: 95px; font-size: 17px'><b>You must have diverse representation <br> evident in staff members, transparent <br> hiring policies, and an ongoing <br> commitment to maintaining inclusive <br> and equitable work environments for all<br> employees.</b></p>
+</div>
+
+<div>
+  <img src='./image10.png' width=275 height= auto style='margin-left: 80px; margin-top: 70px'>
+  <p style='margin-left: 85px; font-size: 17px'><b>Your organization/company must have <br>heightened awareness of the harassment,<br> discrimination, systemic racism, and lack <br> of equity historically excluded groups have <br> faced. Bonus if your organization actively works <br>to liberate Black and Brown communities!</b></p>
+</div>
+
+
+  <div>
+    <img src='./image11.png' width=280 height= auto style='margin-left: 80px; margin-top: 110px'>
+    <p style='margin-left: 85px; font-size: 17px'><b>Your written DEI commitments must <br>align with continued support, equal <br>pay and benefits, diverse representation <br> in leadership and c-suite roles, and <br>accessibility in your workplace. </b></p>
+  </div>
+
+</div>
+
+<br>
+<br>
+
+
+<h2 style='text-align:center;'>Interested? Add your current job openings!</h2>
+  <div>
+<button onclick="document.getElementById('id01').style.display='block'" style=" border-radius: 12px; width:auto; margin-left:550px;">CREATE AN EMPLOYER ACCOUNT</button>
+</div>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+      
+   <h1 style='text-align:center; color: #6f47a7;'>Create Your Profile</h1>
+ 
+      <p style='text-align:center;'>Please fill out this form to create an employer account.</p>
+   
+      <hr>
+
+      <label style='padding: 35px; font-size: 25px; color: #9c79e4'><b>1) Company Information</b></label><br><br><br>
+
+      <label for="email" style='padding: 35px;'><b>Company Name (required)</b></label><br>
+      <input type="text" style='margin-left: 35px; width: 60%;' placeholder="Company Name" name="email" required><br>
+   
+      <label for="psw" style='padding: 35px;'><b>Username with email address (required)</b></label><br>
+      <input type="password" style='margin-left: 35px; width: 60%;'  placeholder="janedoe@example.com" name="psw" required><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>Password (required)</b></label><br>
+      <input type="password" style='margin-left: 35px; width: 60%;' placeholder="Password" name="psw-repeat" required><br>
+      
+      <label for="psw-repeat" style='padding: 35px;'><b>Account holder position at company</b></label><br>
+      <input type="password" style='margin-left: 35px; width: 60%;' placeholder="ex: Chief" name="psw-repeat" required><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>First Name</b></label><br>
+      <input type="password" style='margin-left: 35px; width: 60%;' placeholder="Jane" name="psw-repeat" required><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>Last Name</b></label><br>
+      <input type="password" style='margin-left: 35px; width: 60%;' placeholder="Doe" name="psw-repeat" required><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>Company Title</b></label><br>
+      <input type="password" style='margin-left: 35px; width: 60%;' placeholder="title" name="psw-repeat" required><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>Company Website</b></label><br>
+      <input type="password" style='margin-left: 35px; width: 60%;' placeholder=".com" name="psw-repeat" required><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>Company logo upload</b></label><br><br>
+      <input type="file" id="myFile" name="filename" style='margin-left: 35px;'><br><br><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>Company description</b></label><br><br>
+      <textarea rows="8" cols="50" style='margin-left: 35px; width: 60%;'></textarea><br><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>Company address</b></label><br>
+      <input type='text' style='margin-left: 35px; width: 60%;' placeholder="56 Lakewood Ave"></input><br><br><br>
+     
+      <label style='padding: 35px; font-size: 25px; color: #9c79e4'><b>2) Questionnaire</b></label><br><br><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>How does your company or organization
+        adhere to a discriminatory-free hiring
+        process? (required)</b></label><br><br>
+      <textarea rows="10" cols="50" style='margin-left: 35px; width: 60%;' required></textarea><br><br>
+
+      <label for="psw-repeat" style='padding: 35px;'><b>How does your company or organization
+        adhere to a discriminatory-free work
+        environment? (required)</b></label><br><br>
+      <textarea rows="10" cols="50" style='margin-left: 35px; width: 60%;' required></textarea><br><br><br>
+
+      <label style='padding: 35px;'><b>Have you been reported or lost an employee
+        due to discriminatory hiring practices or work
+        culture? (required)</b></label><br><br>
+
+        
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>No</b></label><br><br>
+
+
+        <input type="checkbox" id="yes1" name="filter5" value="yes1" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="yes1" style='padding:35px;'><b>Yes, but we have since implemented
+            policies, leadership adjustments, and
+            full review of DEI practices.</b></label><br> <br>
+        
+            <label for="yes1" style='padding:75px;'><b>If you check this option, please include policy changes,
+                proof of change in leadership, and any</b></label><br> <br>
+            
+
+            <label for="yes1" style='padding:65px;'><b>other documentation
+                proving there are ongoing
+                policies, trainings, and
+                reparations in place.</b></label><br> <br>
+        <input type="file" id="myFile" name="filename" style='margin-left: 65px;'><br><br><br>
+        <textarea rows="5" cols="50" style='margin-left: 65px; width: 60%;' required></textarea><br><br><br>
+
+        <input type="checkbox" onchange='handleChange(this);' id="yes1" name="filter5" value="yes1" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="yes1" style='padding:35px;'><b>Yes and we want to do better, but are
+            unsure of next steps.</b></label><br> <br><br><br>
+            
+       
+            <label style='padding: 35px; font-size: 25px; color: #9c79e4'><b>3) Payment</b></label><br><br><br>
+     
+            <TABLE style='margin-left:60px' border="1"
+          summary="This table gives some statistics about fruit
+                   flies: average height and weight, and percentage
+                   with red eyes (for both males and females).">
+            <CAPTION><EM>Payment Subscriptions</EM></CAPTION>
+            <TR><TH rowspan="2">
+
+            <!-- <TH rowspan="2">Red<BR>eyes -->
+            <TR><TH> Silver Subscription <TH>Gold Subscription<TH>Platinum Beta Group
+            <TR><TH>Job Postings<TD>A La Carte<TD>A La Carte<TD>Unlimited
+            <TR><TH>Price (Per job)<TD>$150<TD>$200<TD>$2000 (16% off Gold)
+            <TR><TH>Social Media Promotion<TD>NO<TD>NO<TD>YES
+            <TR><TH>Newsletter Feature<TD>NO<TD>NO<TD>YES
+            <TR><TH>Special Features<TD>Post entry and mid-level roles<TD>Post executive-level roles<TD>Post unlimited job openings
+            </TABLE>
+            <br> <br><br> <br>
+
+            <label for="yes1" style='padding:35px;'><b>Pick a payment option</b></label><br> <br>
+            <input type="checkbox" id="yes1" name="filter5" value="yes1" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="yes1" style='padding:35px;'><b>Silver Subscription</b></label><br> <br>
+        <input type="checkbox" id="yes1" name="filter5" value="yes1" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="yes1" style='padding:35px;'><b>Gold Subscription</b></label><br> <br>
+        <input type="checkbox" id="yes1" name="filter5" value="yes1" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="yes1" style='padding:35px;'><b>Platinum Beta Group</b></label><br> <br>
+        
+        <br> <br>
+      <div class="clearfix" >
+        <!-- <button type="submit" class="signupbtn" id='submit'>Sign Up</button> -->
+        <input type="submit" id="submit" class="signupbtn" disabled class="formbutton button-primary" value="Submit">
+      </div>
+ 
+  </form>
+</div>
+</body>
+</html>

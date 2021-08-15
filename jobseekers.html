@@ -1,0 +1,268 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Job Seekers</title>
+
+<link rel="stylesheet" href="employers.css">
+
+<script>
+    function handleChange(checkbox) {
+    if(checkbox.checked == true){
+        document.getElementById("submit").setAttribute("disabled", "disabled");
+        alert("Unfortunately, you do not currently qualify to post on our website, but email us and we’d love to share resources to help you along your journey.");
+    }else{
+        document.getElementById("submit").removeAttribute("disabled");
+   }
+}
+
+function myFunction() {
+  var checkBox = document.getElementById("myCheck");
+  var text = document.getElementById("text");
+  var text1 = document.getElementById("text1");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+    text1.style.display = "block";
+  } else {
+     text.style.display = "none";
+     text1.style.display = "none";
+  }
+}
+
+function myFunction1() {
+  var checkBox = document.getElementById("myCheck2");
+  var text = document.getElementById("text2");
+  var text1 = document.getElementById("text3");
+  var text2 = document.getElementById("text4");
+  var text3 = document.getElementById("text5");
+  if (checkBox.checked == true){
+    text.style.display = "block";
+    text1.style.display = "block";
+    text2.style.display = "block";
+    text3.style.display = "block";
+  } else {
+     text.style.display = "none";
+     text1.style.display = "none";
+     text2.style.display = "none";
+    text3.style.display = "none";
+  }
+}
+
+function myFunction2() {
+  var checkBox = document.getElementById("myCheck3");
+  var text = document.getElementById("text6");
+  var text1 = document.getElementById("text7");
+
+  if (checkBox.checked == true){
+    text.style.display = "block";
+    text1.style.display = "block";
+ 
+  } else {
+     text.style.display = "none";
+     text1.style.display = "none";
+   
+  }
+}
+
+function myFunction3() {
+  var checkBox = document.getElementById("myCheck4");
+  var text = document.getElementById("text8");
+  var text1 = document.getElementById("text9");
+
+  if (checkBox.checked == true){
+    text.style.display = "block";
+    text1.style.display = "block";
+ 
+  } else {
+     text.style.display = "none";
+     text1.style.display = "none";
+   
+  }
+}
+
+</script>
+
+</head>
+<body>
+
+  
+  <ul>
+    <li><a href="./jobseekers.html"><img src="image2.png" class='center' width=5px/>POST A RESUME</a></li>
+    <li><a href="./employers.html"><img src="image3.jpeg" class='center' width=30px/>POST A JOB</a></li>
+    <li><a class="navbar" href="jobboard.html" ><img src="image4.png" class='center' width=20px>JOB BOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>EMPLOYER <br>DASHBOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>JOB SEEKER <br>DASHBOARD</a></li>
+  </ul>
+
+
+  <div>
+  <h1 id='title' style='position: relative;'>Job Seekers</h1>
+  <p style="width:auto; color: white; margin-top: 0px; position: absolute; top: 300px; left: 470px;">Upload your resume and apply for the job openings on our website.</p>
+    <div>
+  <button onclick="document.getElementById('id01').style.display='block'" style="border-radius: 12px; width:auto; background-color: white; color: black; margin-top: 0px; position: absolute; top: 350px; left: 570px;">CREATE A JOB SEEKER ACCOUNT</button></button>
+    </div>
+  </div>
+
+  <br>
+  <h2 style='text-align:center; margin-top: 35px'>Learn more about the BRS community</h2>
+
+  <br>
+  <br>
+
+  <div class="flex-container">
+    
+    <div style='background-color: #DEDBE4; width: 140%; '><img src='./image6.png' width='250' height='auto' style='margin-left: 300px; margin-top: 25px'><p style='margin: 50px; font-size: 20px;'>Black Remote She facilitates job creation for underemployed and underrepresented
+        candidates. Our platform partners with employers maintaining diverse, inclusive,
+        equitable, and discriminatory-free hiring processes and work environments.</p></div>
+    <div><img src='./image13.png' style=' width: 100%; height: auto; margin: 0px'></div>
+  </div>
+
+  <br>
+  <br>
+
+  <h2 style='text-align:center;'>Why Black Remote She?</h2>
+
+  <div class="flex-container2">
+    <div>
+  <img src='./image15.png' width=250 height= auto style='margin-left: 100px; margin-top: 70px'>
+  
+  <p style='margin-left: 95px; font-size: 17px'><b> Job creation for historically <br>excluded, underrepresented, and <br>underemployed candidates.</b></p>
+</div>
+
+<div>
+  <img src='./image14.png' width=275 height= auto style='margin-left: 130px; margin-top: 30px'>
+  <p style='margin-left: 130px; font-size: 17px'><b>Committed to bringing positive and <br>lasting change for Black people in <br>the LGBTQI+ community.</b></p>
+</div>
+
+
+  <div>
+    <img src='./image16.png' width=280 height= auto style='margin-left: 130px; margin-top: 50px'>
+    <p style='margin-left: 130px; font-size: 17px'><b>Help connect job seekers to safe <br>remote work environments.</b></p>
+  </div>
+
+</div>
+
+<br>
+<br>
+
+<h2 style='text-align:center;'>Interested? Start seeking current job openings!</h2>
+<br>
+  <div>
+<button onclick="document.getElementById('id01').style.display='block'" style=" border-radius: 12px; width:auto; margin-left:550px;">CREATE A JOB SEEKER ACCOUNT</button>
+</div>
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+
+    <h1 style='text-align:center; color: #6f47a7;'>Create Your Profile</h1>
+    <p style='text-align:center;'>Please fill out this form to create a job seeker account.</p>
+   
+      <hr>
+      <label style='padding: 35px; font-size: 25px; color: #9c79e4'><b>1) Personal Information</b></label><br><br><br>
+    
+      <label for="email" style='padding: 35px;'><b>First Name</b></label><br>
+      <input type="text" style='margin-left: 35px; width: 60%;' placeholder="Jane" name="email" required><br>
+
+      <label for="email" style='padding: 35px;'><b>Last Name</b></label><br>
+      <input type="text" style='margin-left: 35px; width: 60%;' placeholder="Doe" name="email" required><br>
+
+      <label for="email" style='padding: 35px;'><b>Username with email address</b></label><br>
+      <input type="text" style='margin-left: 35px; width: 60%;' placeholder="janedoe@example.com" name="email" required><br>
+
+      <label for="email" style='padding: 35px;'><b>Would you like to opt-in to our newsletter?</b></label><br>
+      <input type="checkbox" id="filter5" name="filter5" value="Yes" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Yes</b></label><br><br>
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>No</b></label><br><br>
+
+        <label for="email" style='padding: 35px;'><b>Password</b></label><br>
+        <input type="text" style='margin-left: 35px; width: 60%;' placeholder="Password" name="email" required><br>
+
+        <label for="email" style='padding: 35px;'><b>Are you looking for work?</b></label><br>
+      <input type="checkbox" id="filter5" name="filter5" value="Yes" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Yes</b></label><br><br>
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>No</b></label><br><br>
+
+        <label for="email" style='padding: 35px;'><b>Type of work you're looking for</b></label><br>
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Freelance</b></label><br><br>
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Contract</b></label><br><br>
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Part-time</b></label><br><br>
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Full-time</b></label><br><br><br><br>
+
+        <label for="email" style='padding: 35px;'><b>Current job title (it’s okay to leave this empty if
+            you’re currently out of work)</b></label><br>
+        <input type="text" style='margin-left: 35px; width: 60%;' placeholder="ex: Chief" name="email" required><br><br><br>
+
+        <label style='padding: 35px; font-size: 25px; color: #9c79e4'><b>2) Professional Background</b></label><br><br><br>
+        
+        <label for="email" style='padding: 35px;'><b>Do you have a high school diploma or GED?</b></label><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Yes</b></label><br><br>
+
+        <input type="checkbox" id="myCheck" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;' onclick="myFunction()">
+        <label for="filter5" style='padding:35px;'><b>No</b></label><br><br>
+        
+        <label for="filter5" style='padding:35px; display:none' id="text1"><b>Please share a brief explanation why not
+            (within your comfort zone)</b></label><br><br>
+        <input type="text" style='margin-left: 35px; width: 60%; display:none' id="text" placeholder="Enter Email" name="email" required><br>
+
+        <label for="email" style='padding: 35px;'><b>Did you go to college/trade school?</b></label><br>
+
+        <input type="checkbox" id="myCheck2" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;' onclick="myFunction1()">
+        <label for="filter5" style='padding:35px;' ><b>Yes</b></label><br><br>
+        
+        <label for="filter5" style='margin-left: 35px; padding:16px; display:none' id="text2"><b>What school did you attend?</b></label><br><br>
+        <input type="text" style='margin-left: 35px; width: 60%; display:none' id="text3" placeholder="Enter Email" name="email" required><br>
+
+        <label for="filter5" style='margin-left: 35px; padding:16px; display:none' id="text4"><b>What degree did you pursue?</b></label><br><br>
+        <input type="text" style='margin-left: 35px; width: 60%; display:none' id="text5" placeholder="Enter Email" name="email" required><br>
+
+        <input type="checkbox" id="myCheck3" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;' onclick="myFunction2()">
+        <label  style='padding:35px;'><b>No</b></label><br><br>
+        
+        <label  style='padding:35px; display:none' id="text6"><b>What did you do instead? (Tip: tell us a
+            brief, but engaging story about your
+            travel experiences or exciting projects
+            you completed. If you’re self taught, this
+            is your opportunity to share more
+            about your non traditional career path)</b></label><br><br>
+
+        <textarea rows="10" cols="50" style='margin-left: 35px; width: 60%; display:none' id="text7" required></textarea><br><br><br>
+        
+        <label for="email" style='padding: 35px;'><b>Do you have a resume?</b></label><br>
+
+        <input type="checkbox" id="myCheck4" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;' onclick="myFunction3()">
+        <label for="filter5" style='padding:35px;' ><b>Yes</b></label><br><br>
+
+        <label for="email" style='padding: 35px; display:none' id="text8"><b>Please upload your resume</b></label><br>
+        <input type="file" name="filename" style='margin-left: 65px; display:none' id="text9"><br><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>No</b></label><br><br><br><br>
+
+        <label for="email" style='padding: 35px;'><b>Would you like to use our resume templates to
+            recreate your resume?</b></label><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>Yes</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 35px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:35px;'><b>No</b></label><br><br>
+        <br>
+        <br>
+        <div class="clearfix" >
+            <!-- <button type="submit" class="signupbtn" id='submit'>Sign Up</button> -->
+            <input type="submit" id="submit" class="signupbtn" disabled class="formbutton button-primary" value="Submit">
+          </div>
+         
+  </form>
+</div>
+</body>
+</html>

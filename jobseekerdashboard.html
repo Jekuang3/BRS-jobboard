@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Job Seekers</title>
+
+<link rel="stylesheet" href="employerdashboard.css">
+
+<script>
+    function handleChange(checkbox) {
+    if(checkbox.checked == true){
+        document.getElementById("submit").setAttribute("disabled", "disabled");
+        alert("Unfortunately, you do not currently qualify to post on our website, but email us and we’d love to share resources to help you along your journey.");
+    }else{
+        document.getElementById("submit").removeAttribute("disabled");
+   }
+}
+
+</script>
+
+</head>
+<body>
+
+  
+  <ul>
+    <li><a href="./jobseekers.html"><img src="image2.png" class='center' width=5px/>POST A RESUME</a></li>
+    <li><a href="./employers.html"><img src="image3.jpeg" class='center' width=30px/>POST A JOB</a></li>
+    <li><a class="navbar" href="jobboard.html" ><img src="image4.png" class='center' width=20px>JOB BOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>EMPLOYER <br>DASHBOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>JOB SEEKER <br>DASHBOARD</a></li>
+  </ul>
+
+
+
+
+
+  <br>
+  <br>
+
+  <div class="flex-container">
+<div class="card" style='margin-left: 40px;'>
+  <img src="./image18.png" alt="Jane" style="width:40%">
+  <h1 style='color:#6f47a7' >Jane Doe</h1>
+  <p class="title">CEO & Founder, Example</p> 
+  <p>Harvard University</p>
+  <p>name@example.com</p>
+  
+</div>
+
+<div class="square"><div><img src='./image17.png' width="90" height="auto" style='margin-left: 80px; margin-top: 40px;'></div><div><p style='margin-left: 60px;'> 5 Jobs Posted</p></div></div>
+
+<div class="square"><div><img src='./image19.png' width="90" height="auto" style='margin-left: 80px; margin-top: 40px;'></div><div><p style='margin-left: 60px;'> 46 Applicants</p></div></div>
+<div class="square"><div><img src='./image20.png' width="90" height="auto" style='margin-left: 80px; margin-top: 40px;'></div><div><p style='margin-left: 60px;'> 2 Jobs Closed</p></div></div>
+
+</div>
+
+
+<br>
+<br>
+<br>
+<div class="flex-container1">
+  <div>
+<button onclick="document.getElementById('id01').style.display='block'" style=" border-radius: 12px; width:auto; margin-left:40px;">POST A JOB</button>
+</div>
+
+
+<h2 style='margin-left: 200px;'>Job Postings Overview</h2>
+
+
+</div>
+
+<table style='margin-left: 50px; margin-right: 30px; width: 70%;'>
+  <tr>
+    <th style='color:#6f47a7'>Job</th>
+    <th style='color:#6f47a7'>Number of Views</th>
+    <th style='color:#6f47a7'>Number of Job Seekers in the Interview Stage</th>
+    <th style='color:#6f47a7'>Number of People Hired</th>
+  </tr>
+  <tr style='background-color:#DEDBE4'>
+    <td>Marketing Director</td>
+    <td>21</td>
+    <td>7</td>
+    <td>2</td>
+  </tr>
+  <tr >
+    <td>Deputy Director</td>
+    <td>45</td>
+    <td>18</td>
+    <td>1</td>
+  </tr>
+  <tr style='background-color:#DEDBE4'>
+    <td>Social Media Manager</td>
+    <td>73</td>
+    <td>12</td>
+    <td>2</td>
+  </tr>
+  <tr>
+    <td>Call Center Manager</td>
+    <td>6</td>
+    <td>4</td>
+    <td>0</td>
+  </tr>
+  <tr style='background-color:#DEDBE4'>
+    <td>Accountant</td>
+    <td>56</td>
+    <td>4</td>
+    <td>1</td>
+  </tr>
+  <tr>
+    <td>Dog Walker</td>
+    <td>5</td>
+    <td>1</td>
+    <td>0</td>
+  </tr>
+</table>
+
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+      
+    <h1 style='text-align:center; color: #6f47a7;'>Post a Job</h1>
+
+    <p style='text-align:center;'>Please fill out this form to post about your job opening.</p>
+
+    <hr>
+    <label style='padding: 16px; font-size: 25px; color: #9c79e4'><b>1) Job Upload</b></label><br><br><br>
+
+    <label for="email" style='padding: 16px;'><b>Job Title (required)</b></label><br>
+      <input type="text" style='margin-left: 16px; width: 60%;' placeholder="Enter job title" name="email" required><br><br>
+
+      <label for="email" style='padding: 16px;'><b>Salary Range (required)</b></label><br><br>
+      <label style='padding: 16px;'><b> (We believe in transparent hiring.
+        All salaries and salary ranges are required to
+        post a job on Black Remote She)</b></label><br>
+
+      <input type="text" style='margin-left: 16px; width: 60%;' placeholder="Enter job title" name="email" required><br><br>
+        
+      <label style='padding: 16px;'><b>Benefits (Please check all that apply for this
+        role)</b></label><br><br>
+      <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Health insurance</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Vision insurance</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Dental insurance</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Maternity leave</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Short term disability</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Long term disability</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Menstrual leave</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Vacation policy (10+ days)</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Vacation policy (less than 10 days)</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Vacation policy (unlimited)</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Professional growth stipend</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Cell phone reimbursement</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Technology equipment stipend</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Internet stipend</b></label><br><br>
+
+        <input type="checkbox" id="filter5" name="filter5" value="No" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+        <label for="filter5" style='padding:16px;'><b>Other: please specify</b></label><br><br>
+        <input type='text' style='margin-left: 16px; width: 60%;'></input><br><br><br>
+
+        <label style='padding: 16px;'><b>Please list any additional benefits or if you’d
+            rather list them, please enter them below:</b></label><br><br>
+        <input type='text' style='margin-left: 16px; width: 60%;'></input><br><br><br>
+
+        <label style='padding: 16px;'><b>Location requirement (if any)</b></label><br><br>
+        <input type='text' style='margin-left: 16px; width: 60%;'></input><br><br><br>
+
+        <label style='padding: 16px;'><b>Deadline</b></label><br><br>
+        <input style='padding: 12px; margin-left: 16px;' type="date" id="start" name="trip-start"
+       value="2021-08-14"
+       min="2021-08-14" max="2021-12-31">
+       <br><br><br><br>
+
+       <label style='padding: 16px;'><b>Qualifications to apply (please note if the
+        qualifications listed on the application are
+        flexible)</b></label><br><br>
+        <textarea rows="10" cols="50" style='margin-left: 16px; width: 60%;' required></textarea><br><br>
+
+        <label style='padding: 16px;'><b>Link to apply (required)</b></label><br><br>
+        <input type='text' style='margin-left: 16px; width: 60%;' required></input><br><br><br>
+
+      <div class="clearfix" >
+        <!-- <button type="submit" class="signupbtn" id='submit'>Sign Up</button> -->
+        <input type="submit" id="submit" class="signupbtn" disabled class="formbutton button-primary" value="Submit">
+      </div>
+      
+      
+  </form>
+</div>
+</body>
+</html>

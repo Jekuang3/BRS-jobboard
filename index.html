@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Job Board</title>
+
+<link rel="stylesheet" href="jobboard.css">
+
+</head>
+<body>
+
+
+<nav>
+    <a href="/learn-html.html">HTML</a> | 
+    <a href="/learn-css.html">CSS</a> | 
+    <a href="/learn-javascript.html">JavaScript</a> | 
+    <a href="/learn-php.html">PHP</a> |
+    </nav>
+
+
+<h1 id='title'>Job Openings</h1>
+
+<div class='container' id='filters'>
+<input type="checkbox" id="filter1" name="filter1" value="Industry">
+<label for="filter1">Industry   </label><br>
+
+<input type="checkbox" id="filter2" name="filter2" value="Salary Range">
+<label for="filter2">Salary Range</label><br>
+
+<input type="checkbox" id="filter3" name="filter3" value="Industry">
+<label for="filter3">Location</label><br>
+
+<input type="checkbox" id="filter4" name="filter4" value="Industry">
+<label for="filter4">Education</label><br>
+
+<input type="checkbox" id="filter5" name="filter5" value="Role Level">
+<label for="filter4">Role Level</label><br>
+
+</div>
+
+
+<button onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Create an Account</button>
+
+<div id="id01" class="modal">
+  <span onclick="document.getElementById('id01').style.display='none'" class="close" title="Close Modal">&times;</span>
+  <form class="modal-content">
+    <!-- <div class="container"> -->
+      
+   <h1 style='padding: 16px;'>Sign Up</h1>
+ 
+      <p style='padding: 16px;'>Please fill in this form to create an account.</p>
+   
+      <hr>
+
+      <label for="email" style='padding: 16px;'><b>Email</b></label><br>
+      <input type="text" style='margin-left: 16px; width: 80%;' placeholder="Enter Email" name="email" required><br>
+   
+      <label for="psw" style='padding: 16px;'><b>Password</b></label><br>
+      <input type="password" style='margin-left: 16px; width: 80%;'  placeholder="Enter Password" name="psw" required><br>
+
+      <label for="psw-repeat" style='padding: 16px;'><b>Repeat Password</b></label><br>
+      <input type="password" style='margin-left: 16px; width: 80%;' placeholder="Repeat Password" name="psw-repeat" required><br>
+      
+      <label>
+        <input type="checkbox" style='margin-left: 16px;' checked="checked" name="remember" style="margin-bottom:15px"> Remember me
+      </label>
+
+      <p style='padding: 16px;'>By creating an account you agree to our <a href="#" style="color:dodgerblue">Terms & Privacy</a>.</p>
+     
+      <div class="clearfix" >
+        <button type="button" onclick="document.getElementById('id01').style.display='none'" class="cancelbtn">Cancel</button>
+        <button type="submit" class="signupbtn">Sign Up</button>
+      </div>
+    <!-- </div> -->
+  </form>
+</div>
+</body>
+</html>

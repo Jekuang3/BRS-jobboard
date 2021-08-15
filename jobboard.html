@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+
+<title>Job Board</title>
+
+<link rel="stylesheet" href="jobboard.css">
+
+</head>
+<body style='background: #DEDBE4 '>
+
+  
+  <ul>
+    <li><a href="./jobseekers.html"><img src="image2.png" class='center' width=5px/>POST A RESUME</a></li>
+    <li><a href="./employers.html"><img src="image3.jpeg" class='center' width=30px/>POST A JOB</a></li>
+    <li><a class="navbar" href="jobboard.html" ><img src="image4.png" class='center' width=20px>JOB BOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>EMPLOYER <br>DASHBOARD</a></li>
+    <li><a class="navbar" href="employerdashboard.html" style='padding-top:60px; padding-right:60px;'>JOB SEEKER <br>DASHBOARD</a></li>
+    
+  </ul>
+
+
+
+  <h1 id='title'>Job Board</h1>
+
+
+
+<div class='container1' id='filters1' style='margin-top:50px; display:flex;'>
+<div>
+<label for="filters1" style='padding:16px;''><b>Industry</b></label><br><br>
+<select style='width:120%; padding:10px;  margin-top: 1px; margin-left: 16px;' name="filter1" id="filter1">
+  <option value="Healthcare">Healthcare</option>
+  <option value="Real estate and development">Real estate and development</option>
+  <option value="Retail">Retail</option>
+  <option value="Education">Education</option>
+  <option value="Government">Government</option>
+</select>
+</div>
+
+
+
+<div>
+  <label for="filters1" style='padding:16px; margin-left: 100px; '><b>Salary Range</b></label><br>
+  <select style='width:100%; margin-left: 110px; padding:10px; margin-top: 16px;' name="filter1" id="filter1">
+    <option value="salary1">$10,000 - $30,000</option>
+    <option value="salary2">$30,000 - $50,000</option>
+    <option value="salary3">$50,000 - $80,000</option>
+    <option value="salary4">$80,000 - $100,000</option>
+    <option value="salary5">$100,000+</option>
+  </select>
+  </div>
+
+  <div>
+    <label for="filter3" style='padding:16px; margin-left: 130px;'><b>Location</b></label><br>
+    <input type="text" id="filter3" name="filter3" placeholder="San Francisco, CA" style='background-color: white; width:90%; margin-left: 150px; padding:9px; margin-top: 16px;'>
+    </div>
+
+    <div>
+      <label for="filters1" style='padding:16px; margin-left: 150px;'><b>Education</b></label><br>
+      <select style='width:20%; margin-left: 150px; padding:10px; margin-top: 16px; width:70%;' name="filter1" id="filter1">
+        <option value="salary1">Less than a high school diploma</option>
+        <option value="salary2">High School Diploma</option>
+        <option value="salary3">Associate Degree</option>
+        <option value="salary4">Bachelor's Degree</option>
+        <option value="salary5">Master's Degree and up</option>
+      </select>
+      </div>
+
+</div>
+
+<div>
+<div class='container2' id='filters1' style='margin-top:50px; display:flex;'>
+  <label for="filter4" style='padding:16px;'><b>Role Level</b></label><br>
+  <input type="checkbox" id="filter5" name="filter5" value="Role Level" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+  <label for="filter4" style='padding:16px;'>Entry</label><br>
+  <input type="checkbox" id="filter5" name="filter5" value="Role Level" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+  <label for="filter4" style='padding:16px;'>Mid-level</label><br>
+  <input type="checkbox" id="filter5" name="filter5" value="Role Level" style='margin-left: 16px; padding:10px; margin-top: 16px;'>
+  <label for="filter4" style='padding:16px;'>Executive</label><br>
+  </div>
+</div>
+
+  </div>
+
+
+
+
+
+
+<br>
+<button onclick="document.getElementById('id01').style.display='block'" style=" margin-top: 25px; margin-left: 550px; width:15%; background-color: #9c79e4">Filter Jobs</button>
+
+<div class="rectangle" style='margin-top: 50px; width: 90%; margin-left: 50px;'>
+  <br>
+  <p style='margin-left:25px;'><b>Reproductive Health Access Project - Organizing and Communications Associate</b></p>
+  <br>
+  <a style='margin-left:25px;' href="./job1.html">Learn more</a>
+</div>
+<div class="rectangle" style='margin-top: 50px; width: 90%; margin-left: 50px;'>
+  <br>
+  <p style='margin-left:25px;'><b>National Center for Law and Economic Justice - Development and Communications Associate</b></p>
+  <br>
+  <a style='margin-left:25px;' href="./job2.html">Learn more</a>
+</div>
+<div class="rectangle" style='margin-top: 50px; width: 90%; margin-left: 50px;'>
+  <br>
+  <p style='margin-left:25px;'><b>My Virtual CFO - Bookkeeping Specialist</b></p>
+  <br>
+  <a style='margin-left:25px;' href="./job3.html">Learn more</a>
+</div>
+<div class="rectangle" style='margin-top: 50px; width: 90%; margin-left: 50px;'>
+  <br>
+  <p style='margin-left:25px;'><b>BYP100 - Emerging Chapter Organizer</b></p>
+  <br>
+  <a style='margin-left:25px;' href="./job4.html">Learn more</a>
+</div>
+
+
+</body>
+</html>
